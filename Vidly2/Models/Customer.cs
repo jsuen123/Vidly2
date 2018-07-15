@@ -14,7 +14,11 @@ namespace Vidly2.Models
         public string Name { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
         public MembershipType MemberShipType { get; set; }  // Navigation property
+
+        [Display(Name = "Membership Type")]
         public byte MembershipTypeId { get; set; }  //For performance, so that we can load foreigh key only instead of the whole object
+
+        [Display(Name="Date of Birth")]
         public DateTime? Birthday { get; set; }
     }
 }
