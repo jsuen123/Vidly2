@@ -15,5 +15,6 @@ namespace Vidly2.Models
         public bool IsSubscribedToNewsletter { get; set; }
         public MembershipType MemberShipType { get; set; }  // Navigation property
         public byte MembershipTypeId { get; set; }  //For performance, so that we can load foreigh key only instead of the whole object
+        public DateTime? Birthday { get; set; }
     }
 }
